@@ -3,8 +3,10 @@ import styles from "./page.module.css";
 
 export default function Home() {
     return (
-        <div bg-yellow-500>
-            <span className="hover:(bg-gray-400 font-medium) font-(light mono)">Hello WOrd</span>
+        <div bg-green-500 mt-20>
+            <span className="hover:(bg-gray-400 font-medium) font-(light mono)">
+                Hello chotli game emmm word how it's good
+            </span>
             <main className={styles.main}>
                 <Image className={styles.logo} src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
                 <ol>
