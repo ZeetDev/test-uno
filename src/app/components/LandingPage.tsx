@@ -1,8 +1,11 @@
 "use client";
 
+import Button from "./Button";
+
 const LandingPage = () => {
     return (
         <div className="min-h-screen">
+            <Button bgColor="#fff" mt={40} />
             {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-800 text-white overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-10"></div>
