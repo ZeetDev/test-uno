@@ -1,42 +1,362 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* === Colors === */
+    --dd-primary: 220 100% 64%;
+    --dd-secondary: 356 70% 50%;
+    --dd-tertiary: 40 100% 69%;
+    --dd-alternateWhite: 216 90% 97%;
+    --dd-border: 212 6% 88%;
+    --dd-black700: 219 44% 17%;
+    --dd-black800: 219 44% 14%;
+    --dd-black900: 219 55% 10%;
+    --dd-bodyText: 218 15% 29%;
+    --dd-body: 0 0% 100%;
+
+    /* [data-theme='dark'] {
+      --background: 0 0% 0%;
+      --foreground: 210 40% 98%;
+
+      --card: 0 0% 4%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 0, 0%, 15%, 0.8;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+
+      --success: 196 100% 14%;
+      --warning: 34 51% 25%;
+      --error: 10 39% 43%;
+    } */
+
+    /* === Heading === */
+    /* H1 L */
+    --dd-fontFamilyH1L: var(--dd-fontHeading);
+    --dd-fontSizeH1L: 42px;
+    --dd-fontWeightH1L: 700;
+    --dd-lineHeightH1L: 110%;
+    --dd-letterSpacingH1L: -0.02em;
+
+    /* H1 */
+    --dd-fontFamilyH1: var(--dd-fontHeading);
+    --dd-fontSizeH1: 42px;
+    --dd-fontWeightH1: 700;
+    --dd-lineHeightH1: 110%;
+    --dd-letterSpacingH1: -0.02em;
+
+    /* H2 */
+    --dd-fontFamilyH2: var(--dd-fontHeading);
+    --dd-fontSizeH2: 34px;
+    --dd-fontWeightH2: 700;
+    --dd-lineHeightH2: 110%;
+    --dd-letterSpacingH2: -0.02em;
+
+    /* H3 */
+    --dd-fontFamilyH3: var(--dd-fontHeading);
+    --dd-fontSizeH3: 26px;
+    --dd-fontWeightH3: 600;
+    --dd-lineHeightH3: 120%;
+    --dd-letterSpacingH3: -0.02em;
+
+    /* H4 */
+    --dd-fontFamilyH4: var(--dd-fontHeading);
+    --dd-fontSizeH4: 22px;
+    --dd-fontWeightH4: 500;
+    --dd-lineHeightH4: 140%;
+    --dd-letterSpacingH4: -0.02em;
+
+    /* H5 */
+    --dd-fontFamilyH5: var(--dd-fontHeading);
+    --dd-fontSizeH5: 18px;
+    --dd-fontWeightH5: 500;
+    --dd-lineHeightH5: 140%;
+    --dd-letterSpacingH5: -0.02em;
+
+    /* H6 */
+    --dd-fontFamilyH6: var(--dd-fontHeading);
+    --dd-fontSizeH6: 16px;
+    --dd-fontWeightH6: 500;
+    --dd-lineHeightH6: 140%;
+    --dd-letterSpacingH6: -0.02em;
+
+    /* === Text === */
+    /* Body XL */
+    --dd-fontFamilyBodyXl: var(--dd-fontBody);
+    --dd-fontSizeBodyXl: 22px;
+    --dd-fontWeightBodyXl: 400;
+    --dd-lineHeightBodyXl: 150%;
+
+    /* Body L */
+    --dd-fontFamilyBodyL: var(--dd-fontBody);
+    --dd-fontSizeBodyL: 18px;
+    --dd-fontWeightBodyL: 400;
+    --dd-lineHeightBodyL: 150%;
+
+    /* Body Base */
+    --dd-fontFamilyBase: var(--dd-fontBody);
+    --dd-fontSizeBase: 16px;
+    --dd-fontWeightBase: 400;
+    --dd-lineHeightBase: 150%;
+
+    /* Body S */
+    --dd-fontFamilyBodyS: var(--dd-fontBody);
+    --dd-fontSizeBodyS: 14px;
+    --dd-fontWeightBodyS: 400;
+    --dd-lineHeightBodyS: 150%;
+
+    /* Body XS */
+    --dd-fontFamilyBodyS: var(--dd-fontBody);
+    --dd-fontSizeBodyS: 12px;
+    --dd-fontWeightBodyS: 400;
+    --dd-lineHeightBodyS: 150%;
+
+    /* === Button === */
+    /* Button L */
+    --dd-fontFamilyButtonL: var(--dd-fontBody);
+    --dd-fontSizeButtonL: 18px;
+    --dd-fontWeightButtonL: 500;
+    --dd-lineHeightButtonL: 120%;
+    --dd-letterSpacingButtonL: 0.02em;
+
+    /* Button M */
+    --dd-fontFamilyButtonM: var(--dd-fontBody);
+    --dd-fontSizeButtonM: 16px;
+    --dd-fontWeightButtonM: 500;
+    --dd-lineHeightButtonM: 120%;
+    --dd-letterSpacingButtonL: 0.02em;
+
+    /* Button S */
+    --dd-fontFamilyButtonS: var(--dd-fontBody);
+    --dd-fontSizeButtonS: 14px;
+    --dd-fontWeightButtonS: 500;
+    --dd-lineHeightButtonS: 120%;
+    --dd-letterSpacingButtonL: 0.02em;
+
+    /* --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 240 5% 96%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+
+    --success: 196 52% 74%;
+    --warning: 34 89% 85%;
+    --error: 10 100% 86%; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@media (min-width: 576px) {
+    :root {
+        /* H1 L */
+        --dd-fontSizeH1L: 70px;
+        --dd-fontWeightH1L: 700;
+        --dd-lineHeightH1L: 100%;
+        --dd-fontFamilyH1L: var(--dd-fontHeading);
+
+        /* H1 */
+        --dd-fontSizeH1: 52px;
+        --dd-fontWeightH1: 800;
+        --dd-lineHeightH1: 120%;
+        --dd-fontFamilyH1: var(--dd-fontHeading);
+
+        /* H2 */
+        --dd-fontSizeH2: 44px;
+        --dd-fontWeightH2: 700;
+        --dd-lineHeightH2: 110%;
+        --dd-fontFamilyH2: var(--dd-fontHeading);
+
+        /* H3 */
+        --dd-fontSizeH3: 42px;
+        --dd-fontWeightH3: 800;
+        --dd-lineHeightH3: 120%;
+        --dd-fontFamilyH3: var(--dd-fontHeading);
+
+        /* H4 */
+        --dd-fontSizeH4: 28px;
+        --dd-fontWeightH4: 500;
+        --dd-lineHeightH4: 140%;
+        --dd-fontFamilyH4: var(--dd-fontHeading);
+
+        /* H5 */
+        --dd-fontSizeH5: 24px;
+        --dd-fontWeightH5: 500;
+        --dd-lineHeightH5: 140%;
+        --dd-fontFamilyH5: var(--dd-fontHeading);
+
+        /* H6 */
+        --dd-fontSizeH6: 18px;
+        --dd-fontWeightH6: 500;
+        --dd-lineHeightH6: 140%;
+        --dd-fontFamilyH6: var(--dd-fontHeading);
+
+        /* Body XL */
+        --dd-fontSizeBodyXl: 22px;
+        --dd-fontWeightBodyXl: 400;
+        --dd-lineHeightBodyXl: 150%;
+
+        /* Body L */
+        --dd-fontSizeBodyL: 18px;
+        --dd-fontWeightBodyL: 400;
+        --dd-lineHeightBodyL: 150%;
+
+        /* Body Base */
+        --dd-fontSizeBody: 16px;
+        --dd-fontWeightBody: 400;
+        --dd-lineHeightBody: 150%;
+
+        /* Body S */
+        --dd-fontSizeBodyS: 14px;
+        --dd-fontWeightBodyS: 400;
+        --dd-lineHeightBodyS: 150%;
+
+        /* Body XS */
+        --dd-fontSizeBodyS: 12px;
+        --dd-fontWeightBodyS: 400;
+        --dd-lineHeightBodyS: 150%;
+
+        /* Button L */
+        --dd-fontSizeButtonL: 18px;
+        --dd-fontWeightButtonL: 500;
+        --dd-lineHeightButtonL: 120%;
+
+        /* Button S */
+        --dd-fontSizeButtonS: 14px;
+        --dd-fontWeightButtonS: 500;
+        --dd-lineHeightButtonS: 120%;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        /* H1 L */
+        --dd-fontSizeH1L: 90px;
+        --dd-fontWeightH1L: 700;
+        --dd-lineHeightH1L: 100%;
+
+        /* H1 */
+        --dd-fontSizeH1: 70px;
+        --dd-fontWeightH1: 800;
+        --dd-lineHeightH1: 100%;
+
+        /* H2 */
+        --dd-fontSizeH2: 52px;
+        --dd-fontWeightH2: 700;
+        --dd-lineHeightH2: 110%;
+
+        /* H3 */
+        --dd-fontSizeH3: 42px;
+        --dd-fontWeightH3: 800;
+        --dd-lineHeightH3: 120%;
+
+        /* H4 */
+        --dd-fontSizeH4: 32px;
+        --dd-fontWeightH4: 500;
+        --dd-lineHeightH4: 140%;
+
+        /* H5 */
+        --dd-fontSizeH5: 24px;
+        --dd-fontWeightH5: 500;
+        --dd-lineHeightH5: 140%;
+
+        /* H6 */
+        --dd-fontSizeH6: 18px;
+        --dd-fontWeightH6: 500;
+        --dd-lineHeightH6: 140%;
+
+        /* Body XL */
+        --dd-fontSizeBodyXl: 22px;
+        --dd-fontWeightBodyXl: 400;
+        --dd-lineHeightBodyXl: 150%;
+
+        /* Body L */
+        --dd-fontSizeBodyL: 18px;
+        --dd-fontWeightBodyL: 400;
+        --dd-lineHeightBodyL: 150%;
+
+        /* Body Base */
+        --dd-fontSizeBody: 16px;
+        --dd-fontWeightBody: 400;
+        --dd-lineHeightBody: 150%;
+
+        /* Body S */
+        --dd-fontSizeBodyS: 14px;
+        --dd-fontWeightBodyS: 400;
+        --dd-lineHeightBodyS: 150%;
+
+        /* Body XS */
+        --dd-fontSizeBodyS: 12px;
+        --dd-fontWeightBodyS: 400;
+        --dd-lineHeightBodyS: 150%;
+
+        /* Button L */
+        --dd-fontSizeButtonL: 18px;
+        --dd-fontWeightButtonL: 500;
+        --dd-lineHeightButtonL: 120%;
+
+        /* Button S */
+        --dd-fontSizeButtonS: 14px;
+        --dd-fontWeightButtonS: 500;
+        --dd-lineHeightButtonS: 120%;
+    }
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+    html {
+        color-scheme: dark;
+    }
 }
