@@ -1,5 +1,15 @@
-import LandingPage from "./components/LandingPage";
+"use client";
 
-export default function Home() {
-    return <LandingPage />;
+import Button from "./components/Button";
+
+function Home() {
+    return (
+        <div grid place-items-center min-h-screen w-full bg-blue-100 text-black>
+            <Button className="bg-green-500 px-4 py-2">
+                Read More
+            </Button>
+        </div>
+    );
 }
+
+export default Home;

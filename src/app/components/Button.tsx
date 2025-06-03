@@ -1,7 +1,9 @@
-"use client";
+"use client"
 
-function Button({ bgColor, mt }: { bgColor: string, mt: number }) {
-    return <button className={`py-2 px-3 mt-[${mt}px] bg-[${bgColor}]`}>Button</button>;
+function Button({className, mt = "49", children}: {className: string, mt?: string, children: React.ReactNode}) {
+  return (
+    <button className={className} mt={mt}>{children}</button>
+  )
 }
 
-export default Button;
+export default Button
