@@ -5,7 +5,7 @@ import React from 'react'
 import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
-import Button from './components/Button'
+import LandingPage from './components/LandingPage'
 import './styles.css'
 
 export default async function HomePage() {
@@ -18,7 +18,7 @@ export default async function HomePage() {
 
   return (
     <div>
-      <Button />
+      <LandingPage />
     </div>
   )
 }
