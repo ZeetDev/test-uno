@@ -1,8 +1,9 @@
 "use client"
+import clsx from 'clsx';
 
-function Button({className, mt = "49", children}: {className: string, mt?: string, children: React.ReactNode}) {
+function Button({className, mt, children}: {className: string, mt?: string, children: React.ReactNode}) {
   return (
-    <button className={className} mt={mt}>{children}</button>
+    <button className={clsx(className, `mt-[${mt}px]`)}>{children}</button>
   )
 }
 
