@@ -1,3 +1,9 @@
+@unocss all;
+
+.my_title {
+    @apply text-center px-2 py-2 inline-block bg-green-500 rounded-2xl mt-5 ms-5;
+}
+
 :root {
     /* === Colors === */
     --dd-primary: 220 100% 64%;

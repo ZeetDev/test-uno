@@ -2,10 +2,14 @@
 
 import Image from "next/image";
 import Button from "./components/Button";
+import Title from "./components/Title";
 
 function Home() {
     return (
-        <div className="bg-body min-h-screen text-bodyText">
+        <div min-h-screen text-bodyText>
+            <Title size="3xl" color="green">
+                Hello Title
+            </Title>
             {/* Hero Section */}
             <section className="container pt-20 pb-16 md:pt-32 md:pb-28">
                 <div className="flex flex-col md:flex-row items-center">

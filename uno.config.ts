@@ -14,12 +14,9 @@ export default defineConfig({
         transformerVariantGroup(),
         transformerAttributifyJsx(),
     ],
-    content: {
-        filesystem: [
-            "./{app,components,lib,pages}/**/*.{js,ts,jsx,tsx,css,scss}",
-            "./src/**/*.{js,ts,jsx,tsx,css,scss}",
-        ],
-    },
+    // content: {
+    //     filesystem: ["**/*.{html,js,ts,jsx,tsx,vue,svelte,astro}"],
+    // },
     theme: {
         // container working
         container: {
@@ -166,5 +163,5 @@ export default defineConfig({
                 },
             ],
         },
-    }
+    },
 });
